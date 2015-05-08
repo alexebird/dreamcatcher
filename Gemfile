@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'rspec'
+gem 'awesome_print'
+gem 'pry'
+gem 'pry-byebug'
+gem 'sinatra'
+gem 'shotgun'
+gem 'json'
+gem 'httparty'
