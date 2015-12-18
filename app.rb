@@ -1,5 +1,6 @@
 require 'bundler'
 Bundler.require(:default)
+require 'json'
 
 before do
   pass unless request.accept? 'application/json'
@@ -9,6 +10,5 @@ before do
 end
 
 post '/dreamcatcher/rspec_hook_event/:hook_method.json', provides: :json do
-  data = { params[:hook_method] => @request_payload }
-  ap data
+  ap @request_payload
 end

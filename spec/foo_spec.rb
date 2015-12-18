@@ -4,7 +4,6 @@ describe Foo do
   describe '.new' do
     subject { Foo.new('hi') }
     it 'works' do
-      message 'foobar'
       expect(subject).to_not be nil
     end
   end
